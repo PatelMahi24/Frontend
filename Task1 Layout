@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Design using HTML & CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100vh;
+        }
+        
+        .header {
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .navbar {
+            background-color: orange;
+            color: black;
+            text-align: center;
+            padding: 15px;
+        }
+        
+        .main {
+            display: flex;
+            flex: 1;
+        }
+        
+        .content {
+            display: flex;
+            flex: 3;
+            flex-direction: column;
+        }
+        
+        .section {
+            background-color: #f5deb3;
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .article {
+            background-color: #add8e6;
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .aside {
+            background-color: #faebd7;
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">This is Header area</div>
+        <div class="navbar">Navbar area</div>
+        <div class="main">
+            <div class="content">
+                <div class="section">Section area</div>
+                <div class="article">Article area</div>
+            </div>
+            <div class="aside">Aside area</div>
+        </div>
+        <div class="footer">Footer area</div>
+    </div>
+</body>
+
+</html>
