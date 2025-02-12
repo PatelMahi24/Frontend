@@ -1,0 +1,165 @@
+/* Reset and base styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+/* Navbar styles */
+
+.navbar {
+    background-color: #000000;
+    color: white;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #000000;
+}
+
+
+/* Section styles */
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 6rem;
+    border-bottom: 1px solid #eee;
+}
+
+.section:nth-child(odd) {
+    background-color: #f8f9fa;
+}
+
+.section img {
+    max-width: 45%;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.section img:hover {
+    transform: scale(1.02);
+}
+
+.section div {
+    max-width: 45%;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #000000;
+}
+
+.section p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #666;
+}
+
+.section button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.section button:hover {
+    background-color: #333333;
+}
+
+
+/* Footer styles */
+
+.footer {
+    background-color: #000000;
+    color: white;
+    padding: 3rem 6rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer div {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+}
+
+.footer div ul {
+    list-style: none;
+}
+
+.footer div ul li {
+    margin-bottom: 0.8rem;
+}
+
+.footer div ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer div ul li a:hover {
+    color: #000000;
+}
+
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        padding: 2rem;
+        text-align: center;
+    }
+    .section img,
+    .section div {
+        max-width: 100%;
+        margin: 1rem 0;
+    }
+    .footer {
+        padding: 2rem;
+    }
+    .footer div {
+        flex: 100%;
+        text-align: center;
+    }
+}
